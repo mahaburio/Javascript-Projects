@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.stu_form {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+.stu_form .input_box {
+  min-height: 65%;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  background-image: linear-gradient(
+    to right left,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  /* background-image: linear-gradient(to right top, #053727, #00454a, #004f6d, #445481, #7d5581); */
+}
+
+.stu_form .input_box form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  /* margin-left: 20px; */
+  /* align-items: center; */
+}
+
+.stu_form .input_box form input {
+  height: 40px;
+  /* width: 90%; */
+  border-radius: 5px;
+  border: none;
+  padding-left: 8px;
+  /* margin-top: 10px; */
+}
+
+.stu_form .input_box form label {
+  color: #fff;
+  margin-top: 5px;
+}

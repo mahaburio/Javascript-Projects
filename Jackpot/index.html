@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackpot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Total Winnings:- <span id="coinBox"></span></h1>
+      <div class="box_sec">
+        <div class="jackpot">
+          <div class="downBox">
+            <div id="c1" class="box"></div>
+            <div id="c2" class="box"></div>
+            <div id="c3" class="box"></div>
+            <div id="c4" class="box"></div>
+          </div>
+
+          <div class="upBox">
+            <div id="boxOne" onclick="myFnc('btnOne')" class="button box"></div>
+            <div id="boxTwo" onclick="myFnc('btnTwo')" class="button box"></div>
+            <div id="boxThree" onclick="myFnc('btnThree')" class="button box"></div>
+            <div id="boxFour" onclick="myFnc('btnFour')" class="button box"></div>
+          </div>
+        </div>
+      </div>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
