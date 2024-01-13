@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right top,
+    #3e66a4,
+    #5965bd,
+    #845ece,
+    #b74ad1,
+    #eb12c6
+  );
+}
+
+.hero .box {
+  height: 85vh;
+  width: 30vw;
+  background-color: #fff;
+  /* border-radius: 5px; */
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 50px #00000086;
+}
+
+.hero .box h1 {
+  color: #845ece !important;
+}
+
+.hero .box .input_sec {
+  height: 85%;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.hero .box .input_sec input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #b64ad19f;
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+.hero .box .input_sec button {
+  background-image: linear-gradient(
+    to left,
+    #3e66a4,
+    #5965bd,
+    #845ece,
+    #b74ad1,
+    #eb12c6
+  );
+  color: #fff;
+  border: none;
+}
+
+.hero .box .input_sec input:focus {
+  outline: none;
+}
+
+.hero .box .input_sec input:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.hero .box .input_sec a{
+  text-decoration: none;
+  color: #eb12c6;
+}
+
+ /* ? ========== Comment Boilerprint ==========  */
+
+ .form_value{
+  height: 50vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ }
+
+ .form_value .table_part{
+  width: 80vw;
+  height: 100%;
+  background-color: #b74ad1;
+ }
+
+ .form_value .table_part table{
+  background-color: #dadada;
+  width: 100%;
+  border-collapse: collapse;
+  
+ }
+
+ .form_value .table_part table tr,th{
+  padding: 5px;
+  background-color: #dadada;
+  border: 2px solid #fff;
+ }
