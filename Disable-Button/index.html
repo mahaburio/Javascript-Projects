@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable Buttons</title>
+</head>
+<body>
+
+<button id="btnOne" onclick="handleButtonClick('btnOne')">Button One</button>
+<button id="btnTwo" onclick="handleButtonClick('btnTwo')">Button Two</button>
+<button id="btnThree" onclick="handleButtonClick('btnThree')">Button Three</button>
+<button id="btnFour" onclick="handleButtonClick('btnFour')">Button Four</button>
+<button id="btnFive" onclick="handleButtonClick('btnFive')">Button Five</button>
+
+<script>
+    function handleButtonClick(clickedBtnId) {
+        // Get references to all buttons
+        var buttons = document.getElementsByTagName("button");
+
+        // Loop through the buttons and disable all except the clicked one
+        for (var i = 0; i < buttons.length; i++) {
+            if (buttons[i].id !== clickedBtnId) {
+                buttons[i].disabled = true;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
