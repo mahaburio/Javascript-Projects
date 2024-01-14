@@ -28,6 +28,14 @@ body {
   );
 }
 
+#registrationBox{
+  display: block;
+}
+
+#loginBox{
+  display: none;
+}
+
 .hero .box {
   height: 85vh;
   width: 30vw;
@@ -115,4 +123,9 @@ body {
   padding: 5px;
   background-color: #dadada;
   border: 2px solid #fff;
+ }
+
+ .form_value .table_part table td{
+  border: 2px solid #fff;
+  padding-left: 5px;
  }
