@@ -29,6 +29,7 @@ html, body{
   padding: 30px 80px;
   border: 1px solid #fff;
   height: 100%;
+  position: relative;
 }
 
 .testimonial_sec .container .content{
@@ -101,4 +102,53 @@ html, body{
 .testimonial_sec .card .card-footer h2{
   color: #64ffda;
   text-transform: capitalize;
+}
+
+
+.radio_btn{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.radio_btn span{
+  margin: 5px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #64ffda;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#prevBtn{
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 0;
+}
+
+#nextBtn{
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  right: 10px;
+}
+
+.active {
+  background-color: #00f7eebb;
+  position: relative;
+  animation: activeAn 0.5s linear 1;
+  -webkit-animation: activeAn 0.5s linear 1;
+}
+
+@keyframes activeAn {
+  0% {
+    opacity: 0;
+  }
 }
