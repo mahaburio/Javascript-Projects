@@ -1,0 +1,104 @@
+:root {
+  --main-color: #0a192f;
+  --sub-color: #64ffda;
+  --alt-color: #ffc107;
+  --text-color: #ccd6f6;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/* ? =========== Reviews Sections =========== */
+
+.testimonial_sec{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.testimonial_sec .container{
+  padding: 30px 80px;
+  border: 1px solid #fff;
+  height: 100%;
+}
+
+.testimonial_sec .container .content{
+  border: 1px solid red;
+  min-height: calc(100% - 20%);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.testimonial_sec .container .content .card_sec{
+  display: inline-flex;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.testimonial_sec .container .content .card{
+  height: 100%;
+  width: 900px;
+  transition: 0.5s;
+  margin: 25px;
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 10px #64ffdb4f;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.testimonial_sec .container .content .card .card-header{
+
+  }
+
+  .testimonial_sec .container .content .card .card-header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
+
+.testimonial_sec .about_text {
+  font-size: 25px;
+  color: #ffffff8f;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.testimonial_sec .about_text span {
+  color: var(--sub-color);
+  font-size: 18px;
+}
+
+.testimonial_sec .about_text::after {
+  content: "";
+  width: 20vw;
+  height: 1px;
+  top: 20px;
+  left: 180px;
+  position: absolute;
+  background-color: #b9b5b531;
+}
+
+
+.testimonial_sec .card .card-footer h2{
+  color: #64ffda;
+  text-transform: capitalize;
+}
